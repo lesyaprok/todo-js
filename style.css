@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100vw;
+  background: url("https://img.freepik.com/free-vector/gradient-wallpaper-with-green-tones_23-2148356759.jpg?w=360");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-gap: 50px;
+  min-height: 100vh;
+  text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  padding: 10px;
+}
+
+.header__logo {
+  font-weight: 700;
+  color:rgb(230, 255, 245);
+  font-size: 24px;
+}
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 300px;
+}
+.todo__input-area {
+  display: flex;
+  align-items: stretch;
+  gap: 7px;
+}
+.input-area__input {
+  padding: 10px 15px;
+  max-width: 230px;
+  font-size: 1.6em;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px rgb(0, 80, 47);
+  box-sizing: border-box;
+}
+.input-area__input:focus {
+  outline: 2px solid rgb(0, 131, 44);
+}
+.input-area__button {
+  background-color: rgb(1, 180, 106);
+  padding: 10px;
+  font-size: 1.4em;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px rgb(0, 80, 47);
+  color: #f1fcf5;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.input-area__button:hover {
+  background-color: rgb(0, 223, 130);
+}
+
+.todo__list {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 6px;
+  text-align: left;
+  list-style-type: none;
+}
+
+.list__item {
+  position: relative;
+  padding: 7px 50px;
+  max-width: 100%;
+  background-color: #ffffff9f;
+  box-shadow: 0 0 1px 1px rgb(182, 245, 219);
+  border-radius: 5px;
+  word-wrap: break-word;
+  font-size: 22px;
+}
+
+.item__remove-button {
+  position: absolute;
+  padding: 0 10px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: none;
+  color:rgb(0, 80, 47);
+  font-weight: 600;
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.item__remove-button:hover {
+  background-color: #e4ffee;
+}
+
+.checkbox {
+  display: block;
+  position: absolute;
+  left: 5px;
+  top: 9px;
+  padding: 0 6px;
+  border-radius: 5px;
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  color:#fff;
+  text-align: center;
+  cursor: pointer;
+  transition: color 0.3s ease-in;
+}
+
+.checkbox--checked {
+  color: rgb(0, 80, 47);
+}
+.checked {
+  text-decoration: line-through;
+}
