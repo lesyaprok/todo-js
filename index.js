@@ -6,6 +6,10 @@ const list = document.getElementById("todo__list");
 window.addEventListener("load", getItemsFromStorage);
 list.addEventListener("click", onToDoItemClick);
 button.addEventListener("click", onButtonClick);
+inputValue.addEventListener(
+  "keypress",
+  (e) => e.key === "Enter" && onButtonClick()
+);
 
 function saveItemsToStorage(items) {
   localStorage.setItem("todos", JSON.stringify(items));
