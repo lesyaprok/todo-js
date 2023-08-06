@@ -6,6 +6,7 @@ body {
   background: url("https://img.freepik.com/free-vector/gradient-wallpaper-with-green-tones_23-2148356759.jpg?w=360");
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -111,9 +112,11 @@ header {
   display: block;
   position: absolute;
   left: 5px;
-  top: 5px;
-  bottom: 5px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
   padding: 0 6px;
+  max-height: fit-content;
   border-radius: 5px;
   background-color: #fff;
   font-weight: 600;
